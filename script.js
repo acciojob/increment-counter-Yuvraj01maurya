@@ -9,7 +9,7 @@
     // Function to update counter text and show alert
     function incrementCounter() {
       // Show alert with current counter value before incrementing
-      alert(`Current counter value: ${counterValue}`);
+      alert(`${counterValue}`);
       
       // Increment the counter value
       counterValue++;
