@@ -1,22 +1,9 @@
-//your JS code here. If required.
-// Get the counter element and the button
-    const counterElement = document.getElementById('counter');
-    const incrementButton = document.getElementById('incrementBtn');
 
-    // Initialize counter value
-    let counterValue = 0;
+const para = document.getElementById("counter");
+const btn = document.getElementById("incrementBtn");
 
-    // Function to update counter text and show alert
-    function incrementCounter() {
-      // Show alert with current counter value before incrementing
-      alert(`${counterValue}`);
-      
-      // Increment the counter value
-      counterValue++;
-
-      // Update the counter text
-      counterElement.textContent = counterValue;
-    }
-
-    // Add event listener to the button
-    incrementButton.addEventListener('click', incrementCounter);
+btn.addEventListener("click", function() {
+	let count = Number(para.innerText);
+	alert(count);
+	para.innerText = ++count;
+})
